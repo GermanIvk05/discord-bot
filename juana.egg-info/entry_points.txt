@@ -1,0 +1,3 @@
+[console_scripts]
+juana = juana.__main__:main
+

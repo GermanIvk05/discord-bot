@@ -1,0 +1,7 @@
+Temp
+*.pyc
+__pycache__
+.env
+BOTDATA.db
+dist/
+build/

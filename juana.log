@@ -1,0 +1,21 @@
+2020-07-20 21:45:12,481 - INFO - [*] Setting up signal handlers...
+2020-07-20 21:45:12,482 - INFO - [*] Initializing database...
+2020-07-20 21:45:12,482 - INFO - [+] Database initialized
+2020-07-20 21:45:12,482 - INFO - [*] Initializing AIML kernel...
+2020-07-20 21:45:16,688 - INFO - [+] Done initializing AIML kernel. Took 0:00:04.205747
+2020-07-20 21:45:16,688 - INFO - [*] Initializing Discord bot...
+2020-07-20 21:45:17,618 - INFO - [+] Setting up Discord events
+2020-07-20 21:45:17,619 - INFO - [+] Done initializing Discord bot.
+2020-07-20 21:45:17,619 - INFO - [+] Exiting __init__ function.
+2020-07-20 21:45:17,619 - INFO - [*] Now calling run()
+2020-07-20 21:45:17,620 - INFO - logging in using static token
+2020-07-20 21:45:18,394 - INFO - Shard ID 0 has sent the IDENTIFY payload.
+2020-07-20 21:45:18,648 - INFO - Shard ID 0 has connected to Gateway: ["gateway-prd-main-65tr",{"micros":58928,"calls":["discord-sessions-prd-1-38",{"micros":53703,"calls":["start_session",{"micros":50756,"calls":["api-prd-main-pt4n",{"micros":45496,"calls":["get_user",{"micros":5564},"add_authorized_ip",{"micros":2263},"get_guilds",{"micros":3006},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 228008246d7e90d81c38905768459668).
+2020-07-20 21:45:20,654 - INFO - [+] Bot on_ready even fired. Connected to Discord
+2020-07-20 21:45:20,654 - INFO - [*] Name: Juana
+2020-07-20 21:45:20,654 - INFO - [*] ID: 726282447570075669
+2020-07-20 22:06:24,508 - INFO - Received RECONNECT opcode.
+2020-07-20 22:06:24,730 - INFO - Got a request to RESUME the websocket at Shard ID 0.
+2020-07-20 22:06:25,507 - INFO - Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2020-07-20 22:06:25,509 - INFO - Shard ID 0 has sent the RESUME payload.
+2020-07-20 22:06:25,672 - INFO - Shard ID 0 has successfully RESUMED session 228008246d7e90d81c38905768459668 under trace ["gateway-prd-main-qwjd",{"micros":1229,"calls":["discord-sessions-prd-1-38",{"micros":20}]}].
