@@ -37,9 +37,8 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
-* [Usage](#usage)
+  * [Usage](#usage)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -81,7 +80,7 @@ sudo ./Juana.py -h
 
 
 <!-- USAGE EXAMPLES -->
-## Installation
+### Installation
 
 To install onto your computer (so you can just run `juana` from any terminal), run:
 ```sh
