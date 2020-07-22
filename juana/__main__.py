@@ -7,6 +7,26 @@ from dotenv import load_dotenv
 from juana.__init__ import Juana
 
 
+def print_banner():
+    print("""
+          JJJJJJJJJJJ                                                                     
+          J:::::::::J                                                                     
+          J:::::::::J                                                                     
+          JJ:::::::JJ                                                                     
+            J:::::Juuuuuu    uuuuuu    aaaaaaaaaaaaa  nnnn  nnnnnnnn      aaaaaaaaaaaaa   
+            J:::::Ju::::u    u::::u    a::::::::::::a n:::nn::::::::nn    a::::::::::::a  
+            J:::::Ju::::u    u::::u    aaaaaaaaa:::::an::::::::::::::nn   aaaaaaaaa:::::a 
+            J:::::ju::::u    u::::u             a::::ann:::::::::::::::n           a::::a 
+            J:::::Ju::::u    u::::u      aaaaaaa:::::a  n:::::nnnn:::::n    aaaaaaa:::::a 
+JJJJJJJ     J:::::Ju::::u    u::::u    aa::::::::::::a  n::::n    n::::n  aa::::::::::::a 
+J:::::J     J:::::Ju::::u    u::::u   a::::aaaa::::::a  n::::n    n::::n a::::aaaa::::::a 
+J::::::J   J::::::Ju:::::uuuu:::::u  a::::a    a:::::a  n::::n    n::::na::::a    a:::::a 
+J:::::::JJJ:::::::Ju:::::::::::::::uua::::a    a:::::a  n::::n    n::::na::::a    a:::::a 
+ JJ:::::::::::::JJ  u:::::::::::::::ua:::::aaaa::::::a  n::::n    n::::na:::::aaaa::::::a 
+   JJ:::::::::JJ     uu::::::::uu:::u a::::::::::aa:::a n::::n    n::::n a::::::::::aa:::a
+     JJJJJJJJJ         uuuuuuuu  uuuu  aaaaaaaaaa  aaaa nnnnnn    nnnnnn  aaaaaaaaaa  aaaa
+""")
+
 def print_usage():
 	print("""Usage:
 	Juana -h, --help    Shows this message.
