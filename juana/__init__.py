@@ -69,7 +69,6 @@ class Juana:
         
 		# Store configuration values
 		self.channel_name = channel_name
-		self.prefix = "!"
 		self.token = bot_token
 		self.database = database
 		self.message_count = 0
@@ -96,11 +95,11 @@ class Juana:
 		
 		# Set up Discord
 		self.print_log("[*] Initializing Discord bot...", "i")
-		self.discord_bot = discord.AutoShardedClient()
+		self.bot = commands.AutoShardedBot(command_prefix=commands.when_mentioned_or('!'))
 		self.setup_discord_events()
 		self.print_log("[+] Done initializing Discord bot.", "i")
 		self.print_log("[+] Exiting __init__ function.", "i")
-		
+
 	
 	def setup_database_schema(self):
 		for sql_statement in self.SQL_SCHEMA:
@@ -141,13 +140,13 @@ class Juana:
 		
 		self.print_log("[+] Setting up Discord events", "i")
 		
-		@self.discord_bot.event
+		@self.bot.event
 		async def on_ready():
 			self.print_log("[+] Bot on_ready even fired. Connected to Discord", "i")
-			self.print_log("[*] Name: {}".format(self.discord_bot.user.name), "i")
-			self.print_log("[*] ID: {}".format(self.discord_bot.user.id), "i")
+			self.print_log("[*] Name: {}".format(self.bot.user.name), "i")
+			self.print_log("[*] ID: {}".format(self.bot.user.id), "i")
 		
-		@self.discord_bot.event
+		@self.bot.listen()
 		async def on_message(message):
 			
 			self.message_count += 1
@@ -187,7 +186,10 @@ class Juana:
 				
 	def run(self):
 		self.print_log("[*] Now calling run()", "i")
-		self.discord_bot.run(self.token)
+		for filename in os.listdir('./juana/cogs/'):
+			if filename.endswith('.py'):
+				self.bot.load_extension(f'juana.cogs.{filename[:-3]}')
+		self.bot.run(self.token)
 		self.print_log("[*] Bot finished running.", "i")
 		
 	def insert_chat_log(self, now, message, aiml_response):

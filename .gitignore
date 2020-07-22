@@ -5,3 +5,6 @@ __pycache__
 BOTDATA.db
 dist/
 build/
+.git
+juana.egg-info
+juana.log

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import os
 from sys import argv
 from os import environ
 from dotenv import load_dotenv
@@ -41,6 +42,7 @@ def main():  # If called by entrypoint
 		exit(1)
         
 	bot = Juana(environ['DISCORD_CHANNEL'], environ['DISCORD_TOKEN'], environ['DATABASE'])
+				
 	bot.run()
         
 if __name__ == '__main__':

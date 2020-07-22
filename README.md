@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/GermanIvk05/Juana-Bot">
-    <img src="logo.jpg" alt="Logo" width="160" height="286">
+    <img src="/images/logo.jpg" alt="Logo" width="160" height="286">
   </a>
 
   <h3 align="center">[AIML] Juana Bot</h3>
